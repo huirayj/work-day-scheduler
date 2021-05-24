@@ -32,18 +32,18 @@ $(document).ready(() => {
         $i.addClass('fa fa-save');
         $saveBtn.attr('index', i - 9);
     }
-    // saveBtn event handler and pushing to local storage
+    // saveBtn event listener and handler
     $('button').click((e) => {
         e.preventDefault();
         let element = e.currentTarget;
         let todoItem = $(element).prev().val().trim();
- 
+
         if (todoItem.length !== 0) {
             todoList = todoList.concat({
                 index: $(element).attr('index'),
                 value: todoItem
             });
-
+            // pushing to local storage
             localStorage.setItem('todoList', JSON.stringify(todoList));
         }
     });
