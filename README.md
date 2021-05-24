@@ -20,8 +20,8 @@ For this exercise, the user uses moment JS and JQuery API's to construct a singl
 - https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget
 
 ## Screenshots
-### Quiz screen
+### Work day scheduler
 ![Day scheduler on a desktop](https://github.com/huirayj/work-day-scheduler/blob/main/assets/screenshots/screenshot-desktop.png)
-### Result screen
+### Local storage
 ![Local storage](https://github.com/huirayj/work-day-scheduler/blob/main/assets/screenshots/screenshot-local-storage.png)
 
