@@ -1,6 +1,6 @@
 const currentHour = moment().format('H');
 const currentDate = moment().format('dddd, MMMM Do YYYY');
-let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
+let todoList = JSON.parse(localStorage.getItem('todoList')) || {};
 
 $(document).ready(() => {
     $('#currentDay').text(currentDate);
@@ -32,18 +32,14 @@ $(document).ready(() => {
         $i.addClass('fa fa-save');
         $saveBtn.attr('index', i - 9);
     }
-    // saveBtn event listener and handler
+    // saveBtn event handler and local storage
     $('button').click((e) => {
         e.preventDefault();
         let element = e.currentTarget;
         let todoItem = $(element).prev().val().trim();
 
         if (todoItem.length !== 0) {
-            todoList = todoList.concat({
-                index: $(element).attr('index'),
-                value: todoItem
-            });
-            // pushing to local storage
+            todoList[$(element).attr('index')] = todoItem;
             localStorage.setItem('todoList', JSON.stringify(todoList));
         }
     });
@@ -51,4 +47,8 @@ $(document).ready(() => {
     renderTodoList();
 });
 
-const renderTodoList = () => todoList.forEach(item => $('textarea').eq(item['index']).text(item['value']));
+const renderTodoList = () => {
+    for (let todoItem in todoList) {
+        $('textarea').eq(todoItem).text(todoList[todoItem]);
+    }
+};
