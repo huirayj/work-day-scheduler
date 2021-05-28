@@ -12,7 +12,7 @@ For this exercise, the user uses moment JS and JQuery API's to construct a singl
 6. Linking saving to local storage to said save button.
 7. Displaying/redisplaying user input by accessing local storage.
 
-## Link
+## Links
 - https://github.com/huirayj/work-day-scheduler
 - https://huirayj.github.io/work-day-scheduler/
 
