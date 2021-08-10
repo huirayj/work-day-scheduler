@@ -3,6 +3,15 @@
 ## Overview
 For this exercise, the user uses moment JS and JQuery API's to construct a single day scheduler with the hours from 9:00 am to 5:00 pm. 
 
+## Table of Contents
+  - [Pseudocode](#pseudocode)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Technologies Used](#technologies-used)
+  - [Links](#links)
+  - [Resouces](#resouces)
+  - [Screenshots](#screenshots)
+
 ## Pseudocode
 1. Obtaining the current time using moment JS.
 2. Creating several timeblocks by iteration.
@@ -12,9 +21,27 @@ For this exercise, the user uses moment JS and JQuery API's to construct a singl
 6. Linking saving to local storage to said save button.
 7. Displaying/redisplaying user input by accessing local storage.
 
+## Installation
+
+- Git clone the repository.
+- Open `index.html` in a browser of your choice.
+
+## Usage
+
+- Select criteria for a random password.
+- Click on the "Generate Password" button.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- Moment.js
+
 ## Links
-- https://github.com/huirayj/work-day-scheduler
 - https://huirayj.github.io/work-day-scheduler/
+- https://github.com/huirayj/work-day-scheduler
 
 ## Resources
 - https://momentjs.com/
