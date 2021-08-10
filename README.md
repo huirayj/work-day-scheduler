@@ -28,8 +28,7 @@ For this exercise, the user uses moment JS and JQuery API's to construct a singl
 
 ## Usage
 
-- Select criteria for a random password.
-- Click on the "Generate Password" button.
+- Add text to the provided text areas and click the respective "Save" button.
 
 ## Technologies Used
 
